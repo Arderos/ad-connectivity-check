@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+gem 'pry'
+gem 'resolv'
+gem 'net-ldap'
+gem 'colorize'
