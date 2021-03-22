@@ -8,8 +8,9 @@ require 'socket'
 require 'timeout'
 require 'colorize'
 require 'yaml'
+
 # Define common AD ports
-AD_PORTS = {ldap: 389, ldaps: 636, gc: 3268, gcs: 3269, krb_88: 88, krb_464: 464, rpc: 135, dns: 53}
+AD_PORTS = {ldap: 389, ldaps: 636, gc: 3268, gcs: 3269, krb_88: 88, krb_464: 464, rpc: 135, dns: 53, smb: 445}
 def get_param(key)
   position = ARGV.index("-#{key}") || ARGV.index("--#{key}")
   return nil if !position
